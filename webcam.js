@@ -14,3 +14,12 @@ document.getElementById("start").addEventListener('click',function(){
     console.log("The camera has been disabled");
    }
 },false);
+
+document.getElementById("takeSnap").addEventListener('click',function(){
+  console.log(1)
+  WebCamera.snap( function(data_uri) {
+    console.log(2)
+    console.log(data_uri)
+    document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+  } );
+},false);
