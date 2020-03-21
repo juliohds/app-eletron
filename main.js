@@ -10,6 +10,12 @@ function createWindow () {
     },
   })
 
+
+  let myNotification = new Notification('Sorria para foto', {
+    body: '<p>Termina seu cadastro tiozao</p>'
+  });
+
+  myNotification.show();
   // e carregar o index.html do aplicativo.
   win.loadFile('index.html')
 }
