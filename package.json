@@ -4,11 +4,26 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
   },
+  "build": {
+    "appId": "com.choseyourlane.lol.cyllapp",
+    "productName": "Choose your lane",
+    "mac": {
+      "icon": "./zoe_icon.icns",
+      "category": "public.app-category.utilities"
+    }
+  },
+  "repository": "https://github.com/juliohds/app-eletron.git",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^8.1.1"
+    "electron": "^8.1.1",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "electron-builder": "^22.4.1"
   }
 }
