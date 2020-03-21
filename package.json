@@ -12,8 +12,11 @@
     "appId": "com.choseyourlane.lol.cyllapp",
     "productName": "Choose your lane",
     "mac": {
-      "icon": "./zoe_icon.icns",
+      "icon": "build/zoe_icon.icns",
       "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "build/zoe_icon.ico"
     }
   },
   "repository": "https://github.com/juliohds/app-eletron.git",
@@ -21,9 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^8.1.1",
-    "electron-packager": "^14.2.1"
-  },
-  "dependencies": {
+    "electron-packager": "^14.2.1",
     "electron-builder": "^22.4.1"
   }
 }
