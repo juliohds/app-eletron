@@ -2,8 +2,16 @@
 var enabled = false;
 // Use require to add webcamjs
 var WebCamera = require("webcamjs");
+const { Notification } = require('electron');
 
 document.getElementById("start").addEventListener('click',function(){
+
+  let myNotification = new Notification('Sorria para foto', {
+    body: '<p>Termina seu cadastro tiozao</p>'
+  });
+
+  myNotification.show();
+
    if(!enabled){ // Start the camera !
      enabled = true;
      WebCamera.attach('#camdemo');

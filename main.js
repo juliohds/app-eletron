@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Notification } = require('electron');
 
 function createWindow () {
   // Cria uma janela de navegação.
@@ -9,6 +9,7 @@ function createWindow () {
       nodeIntegration: true
     },
   })
+
   // e carregar o index.html do aplicativo.
   win.loadFile('index.html')
 }
