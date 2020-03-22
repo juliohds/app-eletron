@@ -10,11 +10,9 @@ function createWindow () {
     },
   })
 
-
   let myNotification = new Notification({
-    title: "ola",
-    subtitle: "subt",
-    body: 'Termina seu cadastro tiozao'
+    title: "Bem-vindo",
+    body: "Salve quebrada"
   });
 
   myNotification.show();
