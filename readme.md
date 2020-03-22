@@ -11,3 +11,5 @@
 ## 5 - gerar instalador do electron do MacOS -- DONE
 
 ## 6 - Gerar o instalador do app para o Windows -- DONE
+
+## 7 - Criando trail windowns and macos -- DONE
