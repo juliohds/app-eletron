@@ -11,8 +11,10 @@ function createWindow () {
   })
 
 
-  let myNotification = new Notification('Sorria para foto', {
-    body: '<p>Termina seu cadastro tiozao</p>'
+  let myNotification = new Notification({
+    title: "ola",
+    subtitle: "subt",
+    body: 'Termina seu cadastro tiozao'
   });
 
   myNotification.show();
