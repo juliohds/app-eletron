@@ -1,23 +1,25 @@
 # Code challenge
 
-Nesse code challenge decidimos aprender sobre **ELECTRON** e criamos uma simples aplicação onde utilizamos as features que achamos interessantes. 
+Nesse code challenge decidimos aprender sobre **ELECTRON** e criamos uma simples aplicação onde utilizamos as features que achamos interessantes.
 
 ## Rodando o projeto
 
-* Clone o projeto
+- Clone o projeto
 
-* Rode 
-```npm start```
+- Rode
+  `npm start`
 
 Obs: Caso queira buildar o projeto para instalar no seu computador execute o seguinte comando:
 
 ### MacOS
-``` electron-builder -m```
+
+`electron-builder -m`
 
 ### Windows
-``` electron-builder -w```
 
-## TASKS QUE CRIAMOS NO HORA
+`electron-builder -w`
+
+## TASKS QUE CRIAMOS NA HORA
 
 ## 1 - Personalizar o icone do dock no MacOS -- DONE
 
