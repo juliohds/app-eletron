@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Notification } = require('electron');
+const { app, BrowserWindow, Tray, Menu } = require('electron');
 
 function createWindow () {
   // Cria uma janela de navegação.
@@ -10,14 +10,21 @@ function createWindow () {
     },
   })
 
-  let myNotification = new Notification({
-    title: "Bem-vindo",
-    body: "Salve quebrada"
-  });
+  tray = new Tray('build/iconTemplate.png')
+  const contextMenu = Menu.buildFromTemplate([
+    { label: 'Item1', type: 'radio' },
+    { label: 'Item2', type: 'radio' },
+    { label: 'Item3', type: 'radio', checked: true },
+    { label: 'Item4', type: 'radio' }
+  ])
+  tray.setToolTip('This is my application.')
+  tray.setContextMenu(contextMenu)
 
-  myNotification.show();
   // e carregar o index.html do aplicativo.
   win.loadFile('index.html')
 }
 
 app.whenReady().then(createWindow)
+
+
+
