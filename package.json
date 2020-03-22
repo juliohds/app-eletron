@@ -17,7 +17,10 @@
     },
     "win": {
       "icon": "build/zoe_icon.ico"
-    }
+    },
+    "extraResources": [
+      "./assets/**"
+    ]
   },
   "repository": "https://github.com/juliohds/app-eletron.git",
   "author": "",

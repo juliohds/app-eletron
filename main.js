@@ -10,7 +10,7 @@ function createWindow () {
     },
   })
 
-  tray = new Tray('iconTemplate.png')
+  tray = new Tray('assets/iconTemplate.png')
   const contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
     { label: 'Item2', type: 'radio' },
