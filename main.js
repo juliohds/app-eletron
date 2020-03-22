@@ -1,5 +1,5 @@
 const { app, BrowserWindow, Tray, Menu } = require('electron');
-
+const path = require('path');
 function createWindow () {
   // Cria uma janela de navegação.
   let win = new BrowserWindow({
@@ -9,8 +9,9 @@ function createWindow () {
       nodeIntegration: true
     },
   })
-
-  tray = new Tray('assets/iconTemplate.png')
+  const iconPath = path.join(__dirname, 'assets/iconTemplate.png');
+  
+  tray = new Tray(iconPath)
   const contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
     { label: 'Item2', type: 'radio' },
