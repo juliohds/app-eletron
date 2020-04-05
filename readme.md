@@ -34,3 +34,9 @@ Obs: Caso queira buildar o projeto para instalar no seu computador execute o seg
 ## 6 - Gerar o instalador do app para o Windows -- DONE
 
 ## 7 - Criando tray windowns and macos -- DONE
+
+## challeng 02
+
+# 1 criar um ml preditivo com base na foto inserida realizar uma anilize de se o rosto é propicio a uma lane.
+
+
